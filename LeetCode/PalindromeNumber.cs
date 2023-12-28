@@ -1,6 +1,6 @@
 ﻿namespace LeetCode
 {
-    internal class _9_PalindromeNumber
+    internal class PalindromeNumber
     {
         public bool IsPalindrome(int x)
         {

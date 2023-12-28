@@ -11,9 +11,9 @@
         {
             bool remainder = false, l1Done = false, l2Done = false;
             int operationResult, firstValue, secondValue, remainderValue;
-            ListNode result = null;
+            ListNode result = null, newNode;
 
-            while (true) 
+            while (true)
             {
                 if (!l1Done)
                     firstValue = l1.val;
@@ -31,17 +31,13 @@
                     remainderValue = 1;
 
                 operationResult = firstValue + secondValue + remainderValue;
-
                 if (operationResult > 9)
                 {
                     remainder = true;
-                    result = new ListNode(operationResult - 10, result);
+                    operationResult -= 10;
                 }
                 else
-                {
                     remainder = false;
-                    result = new ListNode(operationResult, result);
-                }
 
                 if (l1.next is null)
                     l1Done = true;
@@ -53,8 +49,12 @@
                 else
                     l2 = l2.next;
 
+                newNode = new ListNode(operationResult);
+                newNode.next = result;
+                result = newNode;
+
                 if (!remainder && l1Done && l2Done)
-                    return result;
+                    return newNode;                
             }
         }
 

@@ -2,7 +2,7 @@
 {
     internal class PalindromeNumber
     {
-        public bool IsPalindrome(int x)
+        public static bool IsPalindrome(int x)
         {
             string input = x.ToString();
             for (int i = 0; i < input.Length / 2; i++)

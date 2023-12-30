@@ -6,7 +6,7 @@ namespace LeetCode
     {
         public static int StrStr(string haystack, string needle)
         {
-            Regex regex = new Regex(needle);
+            Regex regex = new(needle);
             MatchCollection matches = regex.Matches(haystack);
             Match? result = matches.FirstOrDefault();
             if (result != null)

@@ -1,6 +1,6 @@
 ﻿#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type - external code generates warning
 
-namespace LeetCode
+namespace LeetCode.Medium
 {
     internal class AddTwoNumbers
     {

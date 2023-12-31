@@ -2,7 +2,7 @@
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
 #pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
 
-namespace LeetCode
+namespace LeetCode.Easy
 {
     internal class MergeTwoSortedLists
     {

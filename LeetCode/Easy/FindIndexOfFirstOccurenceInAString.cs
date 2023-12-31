@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace LeetCode
+namespace LeetCode.Easy
 {
     internal class FindIndexOfFirstOccurenceInAString
     {

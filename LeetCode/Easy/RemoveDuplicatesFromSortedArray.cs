@@ -1,4 +1,4 @@
-﻿namespace LeetCode
+﻿namespace LeetCode.Easy
 {
     internal class RemoveDuplicatesFromSortedArray
     {

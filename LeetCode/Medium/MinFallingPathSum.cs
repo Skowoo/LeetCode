@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Easy
+﻿namespace LeetCode.Medium
 {
     internal class MinFallingPathSum
     {

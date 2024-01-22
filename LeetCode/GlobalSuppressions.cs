@@ -7,3 +7,4 @@ using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Style", "IDE0044:Add readonly modifier", Justification = "<Pending>", Scope = "member", Target = "~F:LeetCode.Hard.InsertDeleteGetRandomWithDuplicates.RandomizedCollection._values")]
 [assembly: SuppressMessage("Style", "IDE0044:Add readonly modifier", Justification = "<Pending>", Scope = "member", Target = "~F:LeetCode.Medium.InsertDeleteGetRandom.RandomizedSet._values")]
+[assembly: SuppressMessage("Style", "IDE0059:Unnecessary assignment of a value", Justification = "<Pending>", Scope = "member", Target = "~M:LeetCode.Medium.MinFallingPathSum.MinFallingPathSumFunc(System.Int32[][])~System.Int32")]

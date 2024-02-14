@@ -6,7 +6,7 @@
         {
             
 
-            Console.ReadLine();
+            Console.ReadKey(); // Keep
         }
     }
 }

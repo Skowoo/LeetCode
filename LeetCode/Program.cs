@@ -6,7 +6,7 @@ namespace LeetCode
     {
         static void Main()
         {
-            
+
 
             Console.ReadKey(); // Keep
         }

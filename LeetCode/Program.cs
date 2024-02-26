@@ -1,4 +1,6 @@
-﻿namespace LeetCode
+﻿using LeetCode.CommonClasses;
+
+namespace LeetCode
 {
     internal class Program
     {

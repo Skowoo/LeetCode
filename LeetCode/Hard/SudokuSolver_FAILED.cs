@@ -70,13 +70,14 @@
 //                    Console.Write(x + " ");
 //                Console.Write(Environment.NewLine);
 //            }
+
+//            Console.ReadKey();
 //        }
 
 //        public static void SolveSudoku(char[][] board)
 //        {
 //            List<char>[,] possibilities = new List<char>[9, 9];
 
-//            #region First Cycle (found and fill ones from possibilities)
 //            for (int row = 0; row < board.Length; row++)
 //                for (int col = 0; col < board[row].Length; col++)
 //                    if (board[row][col] == '.')
@@ -91,18 +92,8 @@
 //                            if (board[i][col] != '.' && possibleDigits.Contains(board[i][col]))
 //                                possibleDigits.Remove(board[i][col]);
 
-//                        int rowSectorStart = row / 3;
-//                        int colSectorStart = col / 3;
-
-//                        if (colSectorStart == 1)
-//                            colSectorStart = 3;
-//                        if (colSectorStart == 2)
-//                            colSectorStart = 6;
-
-//                        if (rowSectorStart == 1)
-//                            rowSectorStart = 3;
-//                        if (rowSectorStart == 2)
-//                            rowSectorStart = 6;
+//                        int rowSectorStart = row / 3 * 3;
+//                        int colSectorStart = col / 3 * 3;
 
 //                        for (int i = rowSectorStart; i < rowSectorStart + 3; i++)
 //                            for (int j = colSectorStart; j < colSectorStart + 3; j++)
@@ -121,9 +112,6 @@
 //                            possibilities[row, col] = possibleDigits;
 //                        }
 //                    }
-//            #endregion
-
-
 
 
 //            #region Write filled or possibilities count

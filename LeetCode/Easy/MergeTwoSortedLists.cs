@@ -1,6 +1,7 @@
 ﻿#pragma warning disable CS8603 // Possible null reference return.
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
-#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
+
+using LeetCode.CommonClasses;
 
 namespace LeetCode.Easy
 {
@@ -47,17 +48,6 @@ namespace LeetCode.Easy
                 currentNode.next = new ListNode(0);
                 currentNode = currentNode.next;
             };
-        }
-
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int val = 0, ListNode next = null)
-            {
-                this.val = val;
-                this.next = next;
-            }
         }
     }
 }

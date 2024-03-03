@@ -1,6 +1,7 @@
 ﻿#pragma warning disable CS8603 // Possible null reference return.
 #pragma warning disable CS8601 // Possible null reference assignment.
 
+using LeetCode.CommonClasses;
 
 namespace LeetCode.Medium
 {

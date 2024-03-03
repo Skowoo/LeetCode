@@ -1,4 +1,4 @@
-﻿#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type - external code generates warning
+﻿using LeetCode.CommonClasses;
 
 namespace LeetCode.Medium
 {
@@ -58,19 +58,6 @@ namespace LeetCode.Medium
                 if (!remainder && l1Done && l2Done)
                     return headNode.next;
             }
-        }
-    }
-    public class ListNode
-    {
-        public int val;
-
-        public ListNode next;
-
-
-        public ListNode(int val = 0, ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
         }
     }
 }

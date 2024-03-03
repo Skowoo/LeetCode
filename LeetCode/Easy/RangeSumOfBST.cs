@@ -1,4 +1,4 @@
-﻿#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
+﻿using LeetCode.CommonClasses;
 
 namespace LeetCode.Easy
 {
@@ -15,20 +15,6 @@ namespace LeetCode.Easy
             int rightSum = RangeSumBST(root.right, low, high);
 
             return currentVal + leftSum + rightSum;
-        }
-
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-
-            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-            {
-                this.val = val;
-                this.left = left;
-                this.right = right;
-            }
         }
     }
 }

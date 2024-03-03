@@ -1,6 +1,8 @@
 ﻿#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
 #pragma warning disable CS8603 // Possible null reference return.
 
+using LeetCode.CommonClasses;
+
 namespace LeetCode.Medium
 {
     internal class DeleteLeafesWithaGivenValue
@@ -32,20 +34,6 @@ namespace LeetCode.Medium
                 return null;
             else
                 return root;
-        }
-
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-
-            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
-            {
-                this.val = val;
-                this.left = left;
-                this.right = right;
-            }
         }
     }
 }

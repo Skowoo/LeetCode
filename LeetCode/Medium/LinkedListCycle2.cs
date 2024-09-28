@@ -9,7 +9,7 @@ namespace LeetCode.Medium
             if (head is null || head.next is null)
                 return null;
 
-            ListNode slow = head, 
+            ListNode slow = head,
                 fast = head;
 
             while (fast is not null && fast.next is not null)

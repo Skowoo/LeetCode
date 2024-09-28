@@ -16,7 +16,7 @@
             int firstPointer = nums[0];
             int secondPointer = tortoise;
 
-            while(firstPointer != secondPointer)
+            while (firstPointer != secondPointer)
             {
                 firstPointer = nums[firstPointer];
                 secondPointer = nums[secondPointer];

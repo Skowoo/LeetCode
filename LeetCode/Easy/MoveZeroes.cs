@@ -8,19 +8,22 @@ namespace LeetCode.Easy
 {
     internal class MoveZeroes
     {
-        public void MoveZeroesFunc(int[] nums) // Wrong solution - pointer issue.
+        public static void MoveZeroesFunc(int[] nums)
         {
-            var usableLength = nums.Length;
-            var numsList = new List<int>(nums);
-            for (int i = 0; i < usableLength; i++)
-                if (nums[i] == 0)
-                {
-                    numsList.RemoveAt(i);
-                    numsList.Add(0);
-                    usableLength--;
-                }
+            int slow = 0,
+                fast = 0;
 
-            nums = [.. numsList];
+            while (fast < nums.Length)
+            {
+                if (nums[fast] != 0)
+                {
+                    nums[slow] = nums[fast];
+                    slow++;
+                }
+                fast++;
+            }
+            for (int i = slow; i < nums.Length; i++)
+                nums[i] = 0;
         }
     }
 }

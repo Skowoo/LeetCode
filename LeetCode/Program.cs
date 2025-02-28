@@ -8,7 +8,7 @@ namespace LeetCode
         {
 
 
-            Console.ReadKey(); // Keep
+            Console.ReadKey();
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿using LeetCode.CommonClasses;
-
-namespace LeetCode
+﻿namespace LeetCode
 {
     public static class Program
     {

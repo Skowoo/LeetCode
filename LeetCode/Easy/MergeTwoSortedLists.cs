@@ -47,7 +47,8 @@ namespace LeetCode.Easy
 
                 currentNode.next = new ListNode(0);
                 currentNode = currentNode.next;
-            };
+            }
+            ;
         }
     }
 }

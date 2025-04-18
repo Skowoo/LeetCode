@@ -1,8 +1,30 @@
 ﻿namespace LeetCode.Medium
 {
-    internal class SortColors
+    internal static class SortColors
     {
-        public static void SortColorsFunc(int[] nums) // Buddle sort
+        public static void SortColors_CountingSort(int[] nums)
+        {
+            int[] counter = new int[3];
+            foreach (int i in nums)
+                counter[i]++;
+
+            int counterIndex = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (counter[counterIndex] == 0)
+                {
+                    counterIndex++;
+                    i--;
+                }
+                else
+                {
+                    nums[i] = counterIndex;
+                    counter[counterIndex]--;
+                }
+            }
+        }
+
+        public static void SortColors_BubbleSort(int[] nums)
         {
             bool swapMade = true;
             while (swapMade)
